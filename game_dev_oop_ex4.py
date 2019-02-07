@@ -130,5 +130,5 @@ print("*** Testing the Circle Class ***")
 ** Question **
 	1. In the example above, Circle inherits from Shape which makes Shape
         the _____________________   and Circle the ____________________.
-        (Note: Parent and child will not be good enough.  I need the official terms.)
+        (Note: Parent and child will not be good enough.  I need the official terms.) 
 """
