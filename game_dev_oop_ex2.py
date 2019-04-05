@@ -12,12 +12,12 @@ The self keyword:  The first parameter of each method created in a Python progra
 Instance Variable - A variable (attribute) defined within a class constructor method
     defined using the "self." prefix.  Instance variables may have a different value for each object.
 
-Constructor method – A special method called when an object instance is created.
+Constructor method - A special method called when an object instance is created.
     Constructors accept parameters and typically are used to set instance variables
     with default values.  Constructors are used to do anything that needs to be done
     when an Object is created.
 
-Getters and Setters – Methods that allow instances of other objects to access (getters)
+Getters and Setters - Methods that allow instances of other objects to access (getters)
     or store (setters) values of object variables.
 
 
@@ -48,7 +48,6 @@ Write the code below the triple quotes below.
 """
 *** Teacher class ***
 1. Define a class named Teacher containing the following attributes set within a constructor method.
-    The Rectangle must have an additional method named area():
     a. Attributes (Instance variables - defined and set in the constructor):
         i. name
         ii. gender
