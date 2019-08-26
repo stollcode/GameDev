@@ -4,24 +4,24 @@
 	a. Attributes:
         - altitude
         - model
-        - isFlying
+        - is_flying
     b. Create a constructor that accepts the model attribute. Within the constructor:
-        - Create an instance variable named model and set it based upon the value
+        - Create an instance variable named model and set it based upon the value 
             passed to the constructor.
         - Create an instance variable named altitude and set it to 0.
-        - Create an instance variable named isFlying and set it to False.
-    C. Methods:
+        - Create an instance variable named is_flying and set it to False.
+    C. Methods: 
     	- launch() that, when called:
-             i.  Sets the isFlying to True.
+             i.  Sets the is_flying to True.
              ii. Prints the message "Rocket has launched successfully"
     	- land() that, when called:
-             i.  Sets the isFlying to False.
+             i.  Sets the is_flying to False.
              ii. Sets altitude to 0 using the correct setter.
              iii. Prints the message "Rocket has landed"
-        - getAltitude()    #Returns the altitude attribute of the Rocket
-        - setAltitude()    #Sets the altitude attribute of the Rocket
+        - get_altitude()    #Returns the altitude attribute of the Rocket
+        - set_altitude()    #Sets the altitude attribute of the Rocket
         - For the sake of berevity, we are not creating getters and
-                setters for the model or isFlying attributes.
+                setters for the model or is_flying attributes.
 
 """
 # Define the Rocket class here
@@ -57,7 +57,7 @@ print("*** Testing the Rocket Class ***")
             above based on values passed into the constructor upon
             object creation.
         c. Methods:
-            - setX(); getX(); setY(); getY() (getters and setters).
+            - set_x(); get_x(); set_y(); get_y() (getters and setters).
 
 """
 # Define the Shape class here.
@@ -92,14 +92,14 @@ print("*** Testing the Shape Class ***")
                 create the radius instance variable.
         ii. Create the radius instance variable by setting it to the value passed into
                 the constructor.
-            iii. Call the constructor of it's superclass
+        iii. Call the constructor of it's superclass
                 in order to create the instance variables defined in the superclass.
 				super(Circle,self).__init__(x, y)
 
        c. Methods:
-           - getRadius() and setRadius() methods
-           - calcArea()
-	           - Use the formula A = πr^2 and make π equal to 3.14
+           - get_radius() and set_radius() methods
+           - calc_area()
+	           - Use the formula (A = PI * radius squared) and make PI equal to 3.14
 	           - Return the value from the method.
 """
 # Define the Circle class here
@@ -130,6 +130,6 @@ print("*** Testing the Circle Class ***")
 ** Question **
 	1. In the example above, Circle inherits from Shape which makes Shape
         the _____________________   and Circle the ____________________.
-        (Note: Parent and child will not be good enough.  I need the official terms.) 
+        (Note: Parent and child will not be good enough.  I need the official terms.)
 End
 """

@@ -11,7 +11,7 @@ The self keyword:  The first parameter of each method created in a Python progra
 Instance Variable - A variable (attribute) defined within a class constructor method
     that uses the "self." prefix.  Instance variables may have a different value for each object.
 
-Constructor method - A special method called when an object instance is created.
+Constructor method - A special method called when an object instance is created. 
     Constructors accept parameters and typically are used to set instance variables
     with default values.  Constructors are used to do anything that needs to be done
     when an Object is created.
@@ -21,15 +21,18 @@ Constructor method - A special method called when an object instance is created.
 Inheritance: When a class copies all methods and properties from another class.
 
 Superclass - The class from whom the methods and properties are being copied.  It is
-    also called the parent or base class.
+    also called the parent or base class.  Note: the website author calls superclass
+    "parent class"
 
 Subclass - The class that is copying (inheriting) the methods and properties
-    from the Superclass.  It is also called the child class.
+    from the Superclass.  It is also called the child class. Note: The website author calls
+    subclass "child "class.
 
-Inheritance Example: In the class diagram below, the Player, Enemy, Bullet, and Explosion classes
-are subclasses of the Sprite class. When we create an instance of the Player class, all
-methods and properties from Sprite class are included in the Player class.  The same
-holds true for instances of the Enemy, Bullet and Explosion classes.
+Inheritance Example: In the class diagram below, the Player, Enemy, Bullet, and
+    Explosion classes are subclasses of the Sprite class. When we create an instance
+    of the Player class, all methods and properties from Sprite class are included
+    in the Player class.  The same holds true for instances of the Enemy, Bullet
+    and Explosion classes.
 
 Example 2D Game Class Diagram (a type of UML diagram")
                    _____________
@@ -55,8 +58,8 @@ Example 2D Game Class Diagram (a type of UML diagram")
     |   Bullet    |     | |      |   Explosion  |
     |-------------|     | |      |--------------|
     |   speed     |     | |      |    name      |
-    | directionX  |--------------|   animCycle  |
-    | directionY  |              |   images[]   |
+    | direction_x |--------------|animation_cycle|
+    | direction_y |              |   images[]   |
     |   ...       |              |   ...        |
     |_____________|              |______________|
 
@@ -70,8 +73,8 @@ Add the following code to the module.  Do not forget to test!!!
 1. Create a class named Sprite. This class should have all the attributes (instance variables)
     defined in the above diagram and some methods.
     a. Attributes:
-        i. image (String - path to image)
-        ii. x (integer describing position)
+        i.   image (String - path to image)
+        ii.  x (integer describing position)
         iii. y (integer describing position)
 
 	b. Constructor:
@@ -88,16 +91,18 @@ Add the following code to the module.  Do not forget to test!!!
 			return "Sprite Values - Image: " + self.image + " x: " + str(self.x) + " y: " + str(self.y)
 
 	d. Other methods:
-		ii. playSound() method that prints "The Sprite makes a sound".
+		ii. play_sound() method that prints "The Sprite makes a sound".
         iii. Getters and Setters for all instance variables.
 			** Example Getter and Setter methods **
 			 for the image attribute:
 
-				def setImage(self, image):
+				def set_image(self, image):
 					self.image = image
 
-				def getImage(self):
+				def get_image(self):
 					return self.image
+
+            Don't Forget: get_x, set_x, get_y, set_y
 
 
 
@@ -138,9 +143,9 @@ Write the code for the Sprite class after the triple quotes below.
 							" Player Values - speed: " + str(self.speed) +
 							" health: " + str(self.health))
 	d. Other Methods:
-		i. getSpeed() and setSpeed()
-		ii. getHealth() and  setHealth()
-		iii. playSound()  - Just print "The player makes a sound" in this method.
+		i. get_speed() and set_speed()
+		ii. get_health() and  set_health()
+		iii. play_sound()  - Just print "The player makes a sound" in this method.
 
 
 Write the code for the Player class after the triple quotes below
@@ -151,7 +156,7 @@ Write the code for the Player class after the triple quotes below
 
 
 """
-*** Enemy Class (subclass of Sprite) ***
+*** Enemy class (subclass of Sprite) ***
 1. Define a class named Enemy. This class that is a subclass of the Sprite class.
     a. Attributes:
         i. name
@@ -161,7 +166,8 @@ Write the code for the Player class after the triple quotes below
 		Create a constructor for the Enemy class that:
 			a. Accepts values for image, x, y, name and AI.
 			b. Creates instance variables for name and AI using the "self." prefix.
-			c. Calls the constructor of the superclass (Sprite class) passing in values for the
+            c. Creates/sets the instance variables name and AI.
+			d. Calls the constructor of the superclass (Sprite class) passing in values for the
 				image, x, and y instance variables. Look at the Player class if you need help.
 
 	c. __str__() method
@@ -169,9 +175,9 @@ Write the code for the Player class after the triple quotes below
 			  See your code in the Player class for an example.
 
 	d. Other Methods:
-        i. getName() and setName()
-		ii. getAI() and setAI()
-		iii. fireWeapon()  - Just print "The enemy fires his weapon" in this method.
+        i. get_name() and set_name()
+		ii. get_AI() and set_AI()
+		iii. fire_weapon()  - Just print "The enemy fires his weapon" in this method.
 
 Write the code for the Player class after the triple quotes below
 """
@@ -189,15 +195,15 @@ Write the code for the Player class after the triple quotes below
 	c. Print the string representation of the object using the str() method nested
         inside the print() method.
     d. Modify instance variables for each class instance using setters.
-        - Sprite: Change the x and y values to 10 and 20
-        - Player: Change the x, y, speed and health to 200, 500, 10 and 25 respectively.
-        - Enemy:  Change the x, y, name and AI values to 100, 200, "Tusken Raider", and
+        - Sprite: Change the speed and health values to 10 and 20 respectively.
+        - Player: Change the x, y, speed and health to 100, 200, 10 and 25 respectively.
+        - Enemy:  Change the image, name and AI values to "\images\raider.png", "Tusken Raider", and
             "follow-player" respectively.
 	f. Print the string representation of the object using the str() method.
     g. Call other methods for each class where appropriate.
-        - playSound() method for the Sprite object.
-		- playSound() method for the Player object.
-		- fireWeapon() method for the Enemy object.
+        - play_sound() method for the Sprite object.
+		- play_sound() method for the Player object.
+		- fire_weapon() method for the Enemy object.
 
 Write the tests after the triple quotes below.
 """
@@ -213,7 +219,7 @@ Write the tests after the triple quotes below.
 
 
 
-# *** Test the Enemy class here ***  (Test Values: "enemy.png", 500, 600, 10, 20)
+# *** Test the Enemy class here ***  (Test Values: "enemy.png", 500, 600, 10, "run-from-player")
 	# Don't forget to call the fireWeapon() method
 
 

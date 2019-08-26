@@ -6,13 +6,12 @@ DEFINITIONS
 Attribute:  Each class below, has at least one attribute defined.  They hold
     data for each object created from the class.
 
-The self keyword:  The first parameter of each method created in a Python program
-    must be "self".  Self specifies the current instance of the class.
+The self keyword:  The first parameter of each method created in a Python program must be "self".  Self specifies the current instance of the class.
 
 Instance Variable - A variable (attribute) defined within a class constructor method
     defined using the "self." prefix.  Instance variables may have a different value for each object.
 
-Constructor method - A special method called when an object instance is created.
+Constructor method - A special method called when an object instance is created. 
     Constructors accept parameters and typically are used to set instance variables
     with default values.  Constructors are used to do anything that needs to be done
     when an Object is created.
@@ -21,7 +20,7 @@ Getters and Setters - Methods that allow instances of other objects to access (g
     or store (setters) values of object variables.
 
 
-Python Directions: Create a Python module on your Z:\GameDev folder named oop_ex2.py.
+Directions: Create a Python module on your Z:\GameDev folder named oop_ex2.py.
 Add the following code to the module.  Do not forget to test!!!
 
 
@@ -51,11 +50,11 @@ Write the code below the triple quotes below.
     a. Attributes (Instance variables - defined and set in the constructor):
         i. name
         ii. gender
-        iii. primarySubject
-        iv. yearsTaught
+        iii. primary_subject
+        iv. years_taught
 
 Sample code for your constructor:
-    def __init__(self, name, gender, primarySubject, yearsTaught)
+    def __init__(self, name, gender, primary_subject, years_taught)
 
 Write the code below the triple quotes below.
 """
@@ -68,18 +67,18 @@ Write the code below the triple quotes below.
 *** Student Class ***
 1. Define a class named Student. This class will have three attributes and six methods:
     a. Attributes
-        i. studentID
-        ii. gradYear
+        i. student_id
+        ii. grad_year
         iii. gender
     b. Methods (DO NOT USE THE input() function for these methods)
-        i. setStudentId (), A method that changes the studentId based upon the value passed into the method.
-        ii. setGradYear(),  A method that changes the gradYear based upon the value passed into the method.
-        iii. setGender(),  A method that changes the gender based upon the value passed into the method.
+        i. set_student_id (), A method that changes the studentId based upon the value passed into the method.
+        ii. set_grad_year(),  A method that changes the gradYear based upon the value passed into the method.
+        iii. set_gender(),  A method that changes the gender based upon the value passed into the method.
         vii. Three methods, one for each attribute that returns the value.
-            1. getStudentId()   getGradYear()   getGender()
+            1. get_studentId()   get_grad_year()   get_gender()
 
 2. Create a constructor method in the Student class.  Code this method to accept
-parameter values for the three attributes (studentId, gradYear, and gender). Set
+parameter values for the three attributes (student_id, grad_year, and gender). Set
 the properties based upon the parameters passed into the constructor method.
 
 Write the code below the triple quotes below.

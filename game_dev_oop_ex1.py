@@ -17,9 +17,9 @@ Add the following code to the module.  Do not forget to test!!!
     a. Attributes:
         i. name
         ii. gender
-        iii. dateOfBirth
-        iv. phoneNumber
-b. Set all attributes to default as empty strings (also called null strings).
+        iii. date_of_birth
+        iv. phone_number
+b. Set all attributes to default as empty strings (also called null strings). 
 
 Write the code below the triple quotes below.
 """
@@ -33,8 +33,8 @@ Write the code below the triple quotes below.
     a. Attributes:
         i. age
         ii. species
-        iii. isRainForest
-b. Set the default age to zero, species to an empty string and isRainForest to False.
+        iii. is_rain_forest
+b. Set the default age to zero, species to an empty string and is_rain_forest to False.
 
 Write the code below the triple quotes below.
 """
@@ -47,13 +47,13 @@ Write the code below the triple quotes below.
 *** Fish Class ***
 3. Define a class named Fish with the following attributes:
     a. Attributes:
-        i. isFreshWater
+        i. is_fresh_water
         ii. weight
         iii. age
         iv. gender
 b. Set the following defaults for the attributes:
-        isFreshWater to False, weight to 0.0, age to 0 and gender to an empty string.
-c. Define a breathe() method that returns the following string: “The fish breathes”
+        is_fresh_water to False, weight to 0.0, age to 0 and gender to an empty string.
+c. Define a breathe() method that returns the following string: The fish breathes
 
 Do not forget to include self as the first parameter of the method.
 
@@ -72,7 +72,7 @@ Write the code below the triple quotes below.
 *** Enemy Class ***
 4. Create a class named Enemy with the following attributes:
     a. Attributes:
-        i. Name = “Goblin”
+        i. Name = "Goblin"
         ii. health = 100
 
 Write the code below the triple quotes below.
